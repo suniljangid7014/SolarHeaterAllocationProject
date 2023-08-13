@@ -43,9 +43,7 @@ export class AllocateComponent implements OnInit {
       map(solarHeaterId=> Math.max(...solarHeaterId))
     ).subscribe((result)=>{
       if(result){
-        this.newSolarHeaterId = result+1
-        console.log(this.newSolarHeaterId)
-        
+        this.newSolarHeaterId = result+1       
         let obj = new SolarHeater();
         obj.solarHeaterId = this.newSolarHeaterId
         obj.distributorName = val.distributorName

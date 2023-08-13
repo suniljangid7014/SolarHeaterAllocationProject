@@ -25,9 +25,7 @@ errorMessage!:string;
     this.service.getSolarHeaterbyId(this.selectedId).subscribe(
       (responseObj: any) => {
         if (responseObj) {
-          this.selectedSolar = responseObj[0]
-          console.log(this.selectedSolar);
-      
+          this.selectedSolar = responseObj[0]      
         }
       },
       error => {
@@ -39,7 +37,6 @@ errorMessage!:string;
   getAllId() {
     this.service.getAllocations().subscribe((data:any[])=>{
       this.solarHeaterIds = data
-      console.log(this.solarHeaterIds)
     })
   }
 
