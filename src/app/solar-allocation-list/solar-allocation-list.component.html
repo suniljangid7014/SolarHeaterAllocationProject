@@ -1,0 +1,44 @@
+<div class="row">
+    <div class="col-md-5 col-md-offset-4">
+        <div class="panel panel-primary">
+            <div class="panel-heading">Solar Heater Bookings</div>
+            <div class="panel-body">
+                <div class="dropdown">
+                    <p>Please select Heater id below:</p>
+                    <select class="select-dropdown" [(ngModel)]="selectedId" (change)="displaySelected()">
+                        <option value=""></option>
+                        <option *ngFor="let id of solarHeaterIds" [value]="id">{{id}}</option>
+                    </select>
+                </div>
+                <div *ngIf="selectedSolar">
+                    <div class="title">
+                        <h3>Details of Solar id: {{selectedId}}</h3>
+                    </div>
+
+                    <div class="table mt-5">
+                        <table class="table table-bordered">
+                            <thead>
+                              <tr>
+                                <th scope="col">Customer ID</th>
+                                <th scope="col">Distributor Name</th>
+                                <th scope="col">Purchase Date</th>
+                                <th scope="col">Installation Date</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr *ngIf="selectedSolar">
+                               
+                                <td>{{selectedSolar.customerid}}</td>
+                                <td>{{selectedSolar.distributorName}}</td>
+                                <td>{{selectedSolar.purchaseDate}}</td>
+                                <td>{{selectedSolar.installationDate |  daysCount}} Days remanning</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

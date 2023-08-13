@@ -1,0 +1,111 @@
+{
+  "Solarheaterallocation": [
+    {
+      "solarHeaterId": 2001,
+      "distributorName": "Suntek",
+      "purchaseDate": "2/1/2022",
+      "installationDate": "2/2/2022",
+      "customerid": 1002,
+      "id": 2
+    },
+    {
+      "solarHeaterId": 2002,
+      "distributorName": "A4solar",
+      "purchaseDate": "2/1/2023",
+      "installationDate": "2/2/2023",
+      "customerid": 1001,
+      "id": 1
+    },
+    {
+      "solarHeaterId": 2003,
+      "distributorName": "Supremesolar",
+      "purchaseDate": "5/1/2021",
+      "installationDate": "7/2/2021",
+      "customerid": 1003,
+      "id": 3
+    },
+    {
+      "solarHeaterId": 2004,
+      "distributorName": "Suntek",
+      "purchaseDate": "6/11/2022",
+      "installationDate": "6/21/2022",
+      "customerid": 1004,
+      "id": 4
+    },
+    {
+      "solarHeaterId": 2005,
+      "distributorName": "A4solar",
+      "purchaseDate": "9/11/2022",
+      "installationDate": "9/12/2022",
+      "customerid": 1005,
+      "id": 5
+    },
+    {
+      "solarHeaterId": 2006,
+      "distributorName": "Sunil",
+      "purchaseDate": "2023-08-18",
+      "installationDate": "2023-08-14",
+      "customerid": 1006,
+      "id": 6
+    },
+    {
+      "solarHeaterId": 2007,
+      "distributorName": "Suuny",
+      "purchaseDate": "2023-08-24",
+      "installationDate": "2023-08-19",
+      "customerid": 2342,
+      "id": 7
+    },
+    {
+      "solarHeaterId": 2008,
+      "distributorName": "Chunilal",
+      "purchaseDate": "2023-08-13",
+      "installationDate": "2023-08-20",
+      "customerid": 3001,
+      "id": 8
+    },
+    {
+      "solarHeaterId": 2009,
+      "distributorName": "Rani",
+      "purchaseDate": "2023-08-18",
+      "installationDate": "2023-08-20",
+      "customerid": 1011,
+      "id": 9
+    },
+    {
+      "solarHeaterId": 2010,
+      "distributorName": "Mamta",
+      "purchaseDate": "2023-08-10",
+      "installationDate": "2023-08-16",
+      "customerid": 1003,
+      "id": 10
+    }
+  ],
+  "Customer": [
+    {
+      "id": 1001,
+      "name": "Dolly",
+      "location": "Mysore"
+    },
+    {
+      "id": 1002,
+      "name": "Jatin",
+      "location": "Mysore"
+    },
+    {
+      "id": 1003,
+      "name": "Unlord",
+      "location": "Tumkur"
+    },
+    {
+      "id": 1004,
+      "name": "Virna",
+      "location": "Bangalore"
+    },
+    {
+      "id": 1005,
+      "name": "Allegi",
+      "location": "Bangalore"
+    }
+  ]
+}

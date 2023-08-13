@@ -1,0 +1,42 @@
+<div class="row">
+    <div class="col-md-5 col-md-offset-4">
+        <div class="panel panel-primary">
+            <div class="panel-heading">Solar Heater Allocator</div>
+            <div class="panel-body">
+                <form [formGroup]="allocateForm" (ngSubmit)="register(allocateForm.value)">
+                    <div class="mb-3">
+                        <label for="">Distributor Name</label>
+                        <input type="text" class="form-control" formControlName="distributorName">
+                        <span class="error-message" *ngIf="name?.dirty && name?.errors?.['required']">
+                            Required Field
+                        </span>
+                    </div>
+                    <div class="mb-3">
+                        <label for="">Purchase Date</label>
+                        <input type="date" class="form-control" placeholder="mm/dd/yyyy" formControlName="purchaseDate">
+                    </div>
+                    <div class="mb-3">
+                        <label for="">Install Date</label>
+                        <input type="date" class="form-control" placeholder="mm/dd/yyyy" formControlName="installationDate">
+                    </div>
+                    <div class="mb-3">
+                        <label for="">Customer ID</label>
+                        <input type="number" class="form-control" formControlName="customerId">
+                        <span class="error-message" *ngIf="id?.dirty && id?.errors?.['required']">
+                            Required Field
+                        </span>
+                    </div>
+                    <button class="btn btn-primary">Register</button>
+                </form>
+
+               <div *ngIf="successMessage" class="successMessage">
+                <strong>{{successMessage}}</strong>
+               </div>
+               <div *ngIf="errorMessage">
+                <p>{{errorMessage}}</p>
+               </div>
+
+            </div>
+        </div>
+    </div>
+</div>
